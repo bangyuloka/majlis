@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majlis Al Soma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-white text-gray-800">
+
+<header class="bg-gradient-to-r from-orange-400 to-orange-500 text-white p-4 flex justify-between items-center relative">
+   <a href="index.html"><h1 class="text-2xl font-bold">MAJLIS <span class="text-blue-300">AL-SOMA</span></h1></a>
+   <div class="md:hidden">
+    <button id="menu-toggle" class="text-3xl">☰</button>
+    <button id="close-menu" class="hidden text-3xl">✕</button>
+  </div>
+  <nav class="mobile-menu">
+   <a href="index.html">Home</a>
+    <a href="visi.html">Visi Misi</a>
+    <a href="layanan.html">Layanan</a>
+    <a href="galery.html">Galery</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+</header>
+
+
+<main class="text-center p-6">
+    <h2 class="text-3xl md:text-5xl font-bold mt-8">Tenang Damai itu mudah !!</h2>
+    <img src="assets/images/gambar1.jpg" alt="gambar 1" class="mx-auto my-6 rounded-lg shadow-lg max-w-full h-auto">
+	
+	<h3 class="text-4xl md:text-6xl font-bold mt-8">Isi nya masih sementara</h3>
+	<p class="text-lg mt-4 max-w-2xl mx-auto">nanti kita perbaiki pelan-pelan, sementara gerak aja dulu membuat dasarnya</p>
+
+	
+	 <div class="max-w-5xl mx-auto my-6">
+        <video controls class="w-full rounded-lg shadow">
+            <source src="assets/videos/video1.MP4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+	
+	
+</main>
+
+
+
+<footer class="text-center p-4 text-sm text-gray-500">
+    © 2025 Majlis Al Soma. All rights reserved.
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

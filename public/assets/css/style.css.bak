@@ -1,0 +1,77 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(to right, #f97316, #f43f5e); /* gradasi orange ke merah */
+    color: white;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+#menu-toggle, #close-menu {
+    font-size: 2rem;
+    background: none;
+    color: white;
+    cursor: pointer;
+    display: none; /* default hidden, tampil di mobile */
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.mobile-menu.active {
+    display: flex;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    color: #333;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 1.2rem;
+}
+
+.mobile-menu a:hover {
+    background-color: #f3f4f6;
+}
+
+@media (min-width: 768px) {
+    #menu-toggle, #close-menu {
+        display: none; /* pastikan hidden di desktop */
+    }
+
+    .mobile-menu {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        background: transparent;
+        width: auto;
+    }
+
+    .mobile-menu a {
+        color: white;
+        font-size: 1rem;
+        padding: 0 1rem;
+        border: none;
+    }
+
+    .mobile-menu a:hover {
+        background-color: rgba(255,255,255,0.2);
+    }
+}
